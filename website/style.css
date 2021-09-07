@@ -1,0 +1,116 @@
+* {box-sizing: border-box;}
+
+body {
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    font-size: medium;
+    background-image: url("background.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+#app {
+    background-color: rgb(255, 255, 255, 0.3);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 120px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+} 
+h1 {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 50px;
+}
+.title {
+    margin-bottom: 10px;
+    font-size: 27px;
+}
+.holder {margin-bottom: 40px;}
+.entry {
+    width: 60%;
+    font-size: x-large;
+}
+#entryHolder {
+    text-align: center;
+    color: rgb(63, 149, 160);
+}
+#date, #temp, #content {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+/*  Basic Styling To Override Default For Basic HTML Elements */
+label {
+    display: block;
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+input {
+    text-align: center;
+    display: block;
+    height: 50px;
+    width: 320px;
+    background-color: rgba(255, 255, 255, 0.6);
+    color: rgb(63, 149, 160);
+    font-size: 20px;
+    border: none;
+    padding: 15px;
+}
+button {
+    font-family: 'Caveat', cursive;
+    width: 120px;
+    height: 50px;
+    background: rgb(169, 198, 202);
+    color: #fff;
+    font-size: 26px;
+    border: none;
+    box-shadow: 2px 2px 4px #fff;
+    cursor: pointer;
+}
+textarea {
+    text-align: center;
+    resize: none;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.6);
+    color: rgb(63, 149, 160);
+    font-size: 20px;
+    border: none;
+    margin: 8px;
+    padding: 15px;
+    height: 150px;
+    width: 500px;
+}
+@media screen and (max-width: 750px) {
+    textarea {width: 100%;}
+}
+
+
+/* Reset style for HTML element on active to have no border*/
+input:focus, select:focus, textarea:focus, button:focus {outline: none;}
+
+
+/* Style for Placeholder Text*/
+::placeholder {
+    /* Firefox, Chrome, Opera */
+    color: rgb(63, 149, 160);
+    text-align: center;
+    font-family: 'Caveat', cursive;
+}
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: rgb(63, 149, 160);
+    text-align: center;
+    font-family: 'Caveat', cursive;
+}
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: rgb(63, 149, 160);
+    text-align: center;
+    font-family: 'Caveat', cursive;
+}
